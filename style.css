@@ -1,0 +1,33 @@
+html {
+    background-color: #ffff;
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 3em;
+    color: #242424;
+    border-left: 1em solid #242424;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+#blog {
+    border-top: 2px solid #242424;
+}
+
+.blog-post {
+    border-bottom: 2px solid #242424;
+}
+
+img {
+    width: 350px; 
+    height: auto;
+}
