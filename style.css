@@ -1,13 +1,57 @@
-html {
+html, body {
     background-color: #ffff;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 3em;
     color: #242424;
-    border-left: 1em solid #242424;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(127, 149, 209, 0.8);
+    width: 100%;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 12px;
+    margin-left: auto;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #2d2d2e;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+main, header {
+    padding: 3em;
+}
+
+.painting {
+    width: 20%;
 }
 
 h1 {
@@ -24,10 +68,39 @@ p {
 }
 
 .blog-post {
-    border-bottom: 2px solid #242424;
+    background-color: #f1f1f1;
+    border-radius: 1em;
+    margin: 3em 0;
+    padding: 2em;
+    display: flex;
+    /** Make flexbox into column */
+    flex-direction: column;
+}
+
+.blog-img {
+    flex: 1;
+    float: right;
+    height: 350px;
+    height: auto;
+    margin: 0 0 1em 1em;
+}
+
+.blog-content p {
+    margin: 0 0 1em 0;
+}
+
+table {
+    flex: 2;
 }
 
 img {
     width: 350px; 
     height: auto;
+    padding-right: 2em;
+}
+
+.logo {
+    width: 10em;
+    height: auto;
+    margin-bottom: 5em;
 }
