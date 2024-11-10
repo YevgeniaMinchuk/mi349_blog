@@ -9,10 +9,11 @@ body {
     color: #242424;
 }
 
+/** Nav Bar */
 .navbar {
     position: sticky;
     top: 0;
-    background-color: rgba(127, 149, 209, 0.8);
+    background-color: rgba(127, 149, 209, 0.5);
     width: 100%;
     text-decoration: none;
     backdrop-filter: blur(10px);
@@ -35,7 +36,7 @@ body {
 }
 
 .navbar a {
-    color: #2d2d2e;
+    color: #323233;
     padding: 0.5rem 3rem;
     text-decoration: none;
     font-weight: bold;
@@ -167,4 +168,39 @@ td:last-child {
     border-radius: 4px;
     text-align: center;
     min-width: 80px;
+}
+
+/** About page */
+
+.profile-pic {
+    float: right;
+    color: #3d3d3d;
+    margin: 0 10em;
+}
+
+#about-main {
+    display: flex;
+    gap: 3em;
+    margin: 10em 0;
+    padding: 5em 5em;
+}
+
+#about-main h3 {
+    font-size: 22px;
+}
+
+#about-main section {
+    background-color: rgba(127, 149, 209, 0.2);
+    border-radius: 2em;
+    padding: 2em 2em;
+}
+
+/** Contact form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.form-group {
+    flex: 1 1 45%;
 }
